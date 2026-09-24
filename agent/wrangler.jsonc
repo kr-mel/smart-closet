@@ -1,0 +1,21 @@
+{
+  // مساعد خزانة ذكية — Worker منفصل عن smart-closet-api، يستخدم نفس قاعدة البيانات لتسجيل الدخول وقراءة الخزانة.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "smart-closet-agent",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-01",
+  "account_id": "ccdddff44a439c0bfa52b9f6a8a15d2a",
+  "ai": { "binding": "AI" },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "smart-closet", "database_id": "463593bc-611b-4f1c-b0bf-05769d021b82" }
+  ],
+  "ratelimits": [
+    { "name": "RATE_LIMITER", "namespace_id": "2001", "simple": { "limit": 10, "period": 60 } }
+  ],
+  "vars": {
+    // موديل متاح على خطة Workers المجانية. غيّره هون بدون ما تلمس الكود.
+    "MODEL": "@cf/google/gemma-4-26b-a4b-it",
+    // رسائل لكل مستخدم باليوم — بتحمي الحصة المجانية (10,000 neuron) من مستخدم واحد.
+    "DAILY_LIMIT": "20"
+  }
+}

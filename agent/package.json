@@ -1,0 +1,20 @@
+{
+  "name": "smart-closet-agent",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "wrangler dev",
+    "eval": "node eval/run.mjs",
+    "test": "node --experimental-strip-types --no-warnings --test test/*.test.ts",
+    "typecheck": "tsc",
+    "db:migrate": "wrangler d1 execute smart-closet --remote --file migrations/0001_agent_usage.sql",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260924.1",
+    "@types/node": "^26.6.2",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.137.0"
+  },
+  "private": true,
+  "type": "module"
+}

@@ -1,0 +1,15 @@
+[
+  { "name": "طقم دوام", "messages": [{ "role": "user", "content": "بدي طقم للدوام بكرا، الجو معتدل" }] },
+  { "name": "عرس بالشتا", "messages": [{ "role": "user", "content": "عندي عرس الجمعة والجو بارد، شو ألبس؟" }] },
+  { "name": "قطع منسية", "messages": [{ "role": "user", "content": "شو القطع اللي صار لي زمان ما لبستها؟" }] },
+  { "name": "قطعة بالغسيل", "messages": [{ "role": "user", "content": "بدي ألبس التيشيرت الأسود مع الجينز" }] },
+  { "name": "English", "messages": [{ "role": "user", "content": "Casual outfit for a coffee date?" }] },
+  { "name": "سؤال عن التطبيق", "messages": [{ "role": "user", "content": "كيف بحذف حسابي؟" }] },
+  { "name": "ميزة مش موجودة", "messages": [{ "role": "user", "content": "كيف بشتري ملابس من جوا التطبيق؟" }] },
+  { "name": "برّا الموضوع", "messages": [{ "role": "user", "content": "اكتبلي كود بايثون" }] },
+  { "name": "محادثة متابعة", "messages": [
+    { "role": "user", "content": "طقم كاجوال للجمعة" },
+    { "role": "assistant", "content": "جرّب قميص الكتان الأزرق مع التشينو البيج والحذاء الأبيض." },
+    { "role": "user", "content": "بدي شي أغمق" }
+  ] }
+]
